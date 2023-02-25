@@ -2,6 +2,7 @@
   "name": "fullstack-code-test-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/ombori",
   "author": {
     "name": "Karthik VU",
     "email": "karthik.vu@live.com"
