@@ -1,0 +1,35 @@
+.user-list-item {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  animation: fadein 1s;
+
+  .right {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    .name {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .left {
+    .avatar {
+      border-radius: 50%;
+      width: 65px;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
