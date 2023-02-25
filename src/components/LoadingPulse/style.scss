@@ -1,0 +1,56 @@
+.loading-pulse {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+
+    &.three {
+      background: #2caa30;
+      width: 20px;
+      height: 20px;
+    }
+    &.two {
+      background: rgb(222, 251, 177);
+      animation: pulse 2s infinite;
+      width: 150px;
+      height: 150px;
+    }
+    &.one {
+      background: rgb(210, 249, 153);
+      width: 150px;
+      height: 150px;
+      transform: scale(0%);
+      animation: pulse 2s infinite;
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 0;
+  }
+}
